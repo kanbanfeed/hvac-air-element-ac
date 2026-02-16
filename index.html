@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Air Element AC and Heating - HVAC Services in Jacksonville, FL</title>
+<title>Air Element AC and Heating - Jacksonville, FL</title>
 <style>
 * {
 margin: 0;
@@ -17,20 +17,21 @@ color: #333;
 background-color: #ffffff;
 }
 .container {
-max-width: 1100px;
+max-width: 1200px;
 margin: 0 auto;
-padding: 0 15px;
+padding: 0 20px;
 }
 header {
 background-color: #ffffff;
 padding: 20px 0;
-border-bottom: 2px solid #e5e5e5;
+border-bottom: 2px solid #e0e0e0;
 }
 .header-content {
 display: flex;
 justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;
+gap: 15px;
 }
 .business-name {
 font-size: 24px;
@@ -47,64 +48,74 @@ font-weight: bold;
 color: #3b82f6;
 }
 .hero {
-background-color: #f8fafc;
-padding: 40px 20px;
+background-image: url('https://image2url.com/r2/default/images/1771222514090-83bc8610-c64f-40ad-a9fd-c49c7386e01b.jpg');
+background-size: cover;
+background-position: center;
+padding: 100px 20px;
 text-align: center;
+position: relative;
 }
-.hero-image {
-width: 100%;
-max-width: 1000px;
-height: auto;
-border-radius: 12px;
-margin: 0 auto 18px;
+.hero::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.5);
 }
-
-
+.hero-content {
+position: relative;
+z-index: 1;
+color: #ffffff;
+max-width: 800px;
+margin: 0 auto;
+}
 .hero h1 {
-font-size: 38px;
-color: #1e40af;
-font-weight: 700;
-margin-bottom: 10px;
+font-size: 48px;
+margin-bottom: 20px;
 line-height: 1.2;
 }
 .hero p {
-font-size: 18px;
-color: #64748b;
-margin-bottom: 25px;
+font-size: 22px;
+margin-bottom: 30px;
 }
 .cta-button {
 display: inline-block;
 background-color: #1e40af;
 color: #ffffff;
 padding: 18px 40px;
-font-size: 20px;
 text-decoration: none;
-border-radius: 5px;
+font-size: 20px;
 font-weight: bold;
+border-radius: 5px;
+transition: background-color 0.3s;
 }
 .cta-button:hover {
 background-color: #3b82f6;
 }
-.services {
-padding: 80px 0;
-background-color: #ffffff;
+.section {
+padding: 60px 20px;
 }
 .section-title {
 font-size: 36px;
-color: #1e40af;
 text-align: center;
 margin-bottom: 50px;
+color: #1e40af;
 }
 .services-grid {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 gap: 30px;
+max-width: 1000px;
+margin: 0 auto;
 }
 .service-card {
 background-color: #f8fafc;
 padding: 30px;
-border-radius: 5px;
-border: 2px solid #e5e5e5;
+border-radius: 8px;
+text-align: center;
+border: 2px solid #e0e0e0;
 }
 .service-card h3 {
 font-size: 22px;
@@ -112,94 +123,81 @@ color: #1e40af;
 margin-bottom: 15px;
 }
 .service-card p {
-color: #64748b;
 font-size: 16px;
+color: #666;
 }
 .why-choose {
-padding: 80px 0;
 background-color: #f8fafc;
 }
-.why-list {
+.benefits-list {
 max-width: 800px;
 margin: 0 auto;
 }
-.why-item {
+.benefit-item {
 background-color: #ffffff;
 padding: 25px;
 margin-bottom: 20px;
-border-radius: 5px;
 border-left: 4px solid #1e40af;
 font-size: 18px;
-color: #333;
 }
 .service-area {
-padding: 80px 0;
-background-color: #ffffff;
 text-align: center;
 }
 .service-area p {
 font-size: 20px;
-color: #64748b;
+color: #666;
 max-width: 700px;
 margin: 0 auto;
 }
-.secondary-image-section {
-padding: 60px 0;
-background-color: #f8fafc;
-text-align: center;
-}
 .secondary-image {
-width: 100%;
-max-width: 800px;
+text-align: center;
+background-color: #f8fafc;
+}
+.secondary-image img {
+max-width: 100%;
 height: auto;
-border-radius: 5px;
+border-radius: 8px;
 }
 .contact {
-padding: 80px 0;
 background-color: #1e40af;
 color: #ffffff;
 text-align: center;
 }
 .contact h2 {
-font-size: 36px;
-margin-bottom: 20px;
+color: #ffffff;
+margin-bottom: 30px;
+}
+.contact-info {
+font-size: 20px;
+margin-bottom: 15px;
 }
 .contact-phone {
-font-size: 32px;
 color: #ffffff;
 text-decoration: none;
+font-size: 28px;
 font-weight: bold;
-display: block;
+display: inline-block;
 margin: 20px 0;
 }
 .contact-phone:hover {
-color: #e0e7ff;
-}
-.contact-location {
-font-size: 20px;
-color: #e0e7ff;
+color: #e0e0e0;
 }
 footer {
 background-color: #334155;
 color: #ffffff;
-padding: 40px 0;
+padding: 30px 20px;
 text-align: center;
 }
 .footer-content {
 font-size: 16px;
 }
-.footer-name {
-font-size: 20px;
-font-weight: bold;
-margin-bottom: 10px;
-}
 .footer-phone {
 color: #ffffff;
 text-decoration: none;
-font-size: 18px;
+font-weight: bold;
 }
 .footer-phone:hover {
-color: #e0e7ff;
+color: #e0e0e0;
 }
 @media (max-width: 768px) {
 .hero h1 {
@@ -213,16 +211,9 @@ font-size: 28px;
 }
 .business-name {
 font-size: 20px;
-margin-bottom: 10px;
 }
 .header-phone {
 font-size: 18px;
-}
-.contact h2 {
-font-size: 28px;
-}
-.contact-phone {
-font-size: 24px;
 }
 }
 </style>
@@ -237,70 +228,69 @@ font-size: 24px;
 </div>
 </header>
 <section class="hero">
-<div class="container">
-<img src="https://images.unsplash.com/photo-1718203862467-c33159fdc504?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="HVAC Services" class="hero-image">
+<div class="hero-content">
 <h1>Expert HVAC Services in Jacksonville, FL</h1>
 <p>Dependable heating and cooling solutions for your home and business</p>
 <a href="tel:9044403389" class="cta-button">Call Now</a>
 </div>
 </section>
-<section class="services">
+<section class="section">
 <div class="container">
 <h2 class="section-title">Our Services</h2>
 <div class="services-grid">
 <div class="service-card">
 <h3>Air Conditioning Installation</h3>
-<p>Professional installation of energy-efficient AC systems tailored to your needs.</p>
+<p>Professional AC installation for optimal cooling efficiency</p>
 </div>
 <div class="service-card">
 <h3>AC Repair</h3>
-<p>Fast and reliable repairs to keep your air conditioning running smoothly.</p>
+<p>Fast and reliable air conditioning repair services</p>
 </div>
 <div class="service-card">
 <h3>Heating System Services</h3>
-<p>Complete heating solutions including installation, repair, and replacement.</p>
+<p>Complete heating solutions to keep you warm all winter</p>
 </div>
 <div class="service-card">
 <h3>HVAC Maintenance</h3>
-<p>Regular maintenance to extend the life of your heating and cooling systems.</p>
+<p>Regular maintenance to extend your system's lifespan</p>
 </div>
 </div>
 </div>
 </section>
-<section class="why-choose">
+<section class="section why-choose">
 <div class="container">
 <h2 class="section-title">Why Choose Us</h2>
-<div class="why-list">
-<div class="why-item">Reliable and professional service</div>
-<div class="why-item">Clear communication and transparent pricing</div>
-<div class="why-item">Local service focused on customer satisfaction</div>
+<div class="benefits-list">
+<div class="benefit-item">Reliable and professional service</div>
+<div class="benefit-item">Clear communication and transparent pricing</div>
+<div class="benefit-item">Local service focused on customer satisfaction</div>
 </div>
 </div>
 </section>
-<section class="service-area">
+<section class="section service-area">
 <div class="container">
 <h2 class="section-title">Service Area</h2>
-<p>Proudly serving Jacksonville, FL and surrounding areas with exceptional HVAC services.</p>
+<p>Proudly serving Jacksonville, FL and surrounding areas with exceptional HVAC services</p>
 </div>
 </section>
-<section class="secondary-image-section">
+<section class="section secondary-image">
 <div class="container">
-<img src="https://images.unsplash.com/photo-1718203862467-c33159fdc504?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="HVAC Technician" class="secondary-image">
+<img src="https://image2url.com/r2/default/images/1771222514090-83bc8610-c64f-40ad-a9fd-c49c7386e01b.jpg" alt="HVAC Service">
 </div>
 </section>
-<section class="contact">
+<section class="section contact">
 <div class="container">
-<h2>Air Element AC and Heating</h2>
+<h2>Contact Us Today</h2>
+<div class="contact-info">Air Element AC and Heating</div>
 <a href="tel:9044403389" class="contact-phone">(904) 440-3389</a>
-<p class="contact-location">Jacksonville, FL</p>
+<div class="contact-info">Jacksonville, FL</div>
 </div>
 </section>
 <footer>
 <div class="container">
 <div class="footer-content">
-<div class="footer-name">Air Element AC and Heating</div>
-<p>Jacksonville, FL</p>
-<a href="tel:9044403389" class="footer-phone">(904) 440-3389</a>
+<p>Air Element AC and Heating - Jacksonville, FL</p>
+<p><a href="tel:9044403389" class="footer-phone">(904) 440-3389</a></p>
 </div>
 </div>
 </footer>
